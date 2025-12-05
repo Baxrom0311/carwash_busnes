@@ -1,0 +1,27 @@
+# Ignore PHP Composer dependencies
+/carwash-backend/vendor/
+/carwash-backend/composer.lock # Odatda qo'shiladi, lekin agar siz uni yubormoqchi bo'lmasangiz
+
+# Ignore Node.js dependencies for frontend
+/carwash-frontend/node_modules/
+/carwash-frontend/package-lock.json # Odatda qo'shiladi, lekin agar siz uni yubormoqchi bo'lmasangiz
+/carwash-frontend/dist/ # Frontend build papkasi
+
+# Environment variables
+.env
+/.idea/ # IDE konfiguratsiyalari
+
+# Laravel specific ignores (backend ichidagi)
+/carwash-backend/.env
+/carwash-backend/vendor/
+/carwash-backend/storage/*.key
+/carwash-backend/public/build
+/carwash-backend/public/hot
+/carwash-backend/node_modules
+/carwash-backend/npm-debug.log
+/carwash-backend/yarn-error.log
+/carwash-backend/nova-components/*/vendor
+/carwash-backend/nova-components/*/node_modules
+/carwash-backend/nova-components/*/mix-manifest.json
+/carwash-backend/nova-components/*/dist
+/carwash-backend/*.sqlite # Agar SQLite DB ishlatilsa
